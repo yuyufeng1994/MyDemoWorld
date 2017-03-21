@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="DesignPatterns" />
+        <module name="JavaBase" />
         <module name="SearchEngine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MyDemoWorld" target="1.5" />
-      <module name="SearchEngine" target="1.5" />
+      <module name="DesignPatterns" target="1.8" />
+      <module name="JavaBase" target="1.8" />
+      <module name="MyDemoWorld" target="1.8" />
+      <module name="SearchEngine" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
