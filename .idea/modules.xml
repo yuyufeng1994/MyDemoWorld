@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" filepath="$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FrameIntegration/FrameIntegration.iml" filepath="$PROJECT_DIR$/FrameIntegration/FrameIntegration.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBase/JavaBase.iml" filepath="$PROJECT_DIR$/JavaBase/JavaBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyDemoWorld.iml" filepath="$PROJECT_DIR$/MyDemoWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchEngine/SearchEngine.iml" filepath="$PROJECT_DIR$/SearchEngine/SearchEngine.iml" />

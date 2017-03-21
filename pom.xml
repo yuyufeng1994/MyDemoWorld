@@ -15,7 +15,8 @@
     <modules>
         <module>SearchEngine</module>                   <!--搜索引擎-->
         <module>JavaBase</module>                       <!--Java基础-->
-        <module>DesignPatterns</module>                 <!--设计模式-->
+        <module>DesignPatterns</module>
+        <module>FrameIntegration</module>                 <!--设计模式-->
     </modules>
 
     <dependencies>
