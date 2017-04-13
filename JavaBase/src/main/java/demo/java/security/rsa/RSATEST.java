@@ -24,10 +24,12 @@ public class RSATEST {
 
     @Test
     public void testCheck() throws NoSuchAlgorithmException {
-        String sign = RSASignature.sign(getMD5("test1"), privateKey);
+        //发送信息
+        String sign = RSASignature.sign(getMD5("test"), privateKey);
         System.out.println("sign:" + sign);
 
-        boolean res = RSASignature.doCheck(getMD5("test1"), sign, publicKey);
+        //接收信息
+        boolean res = RSASignature.doCheck(getMD5("test"), sign, publicKey);
         System.out.println(res);
     }
 
