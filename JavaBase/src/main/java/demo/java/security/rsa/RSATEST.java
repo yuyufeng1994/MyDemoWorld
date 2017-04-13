@@ -24,16 +24,15 @@ public class RSATEST {
 
     @Test
     public void testCheck() throws NoSuchAlgorithmException {
-        String sign = RSASignature.sign(getMD5("test"), privateKey);
+        String sign = RSASignature.sign(getMD5("test1"), privateKey);
         System.out.println("sign:" + sign);
 
-        boolean res = RSASignature.doCheck(getMD5("test"), sign, publicKey);
+        boolean res = RSASignature.doCheck(getMD5("test1"), sign, publicKey);
         System.out.println(res);
     }
 
 
     public String getMD5(String str) throws NoSuchAlgorithmException {
-        str = "test";
         // 生成一个MD5加密计算摘要
         MessageDigest md = MessageDigest.getInstance("MD5");
         // 计算md5函数
