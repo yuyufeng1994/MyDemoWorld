@@ -1,4 +1,4 @@
-package demo.java.security;
+package demo.java.security.rsa;
 
 import java.security.Key;
 
@@ -21,11 +21,11 @@ import sun.misc.BASE64Encoder;
 
 @SuppressWarnings("unused")
 
-public class RSATest {
+public class RSACreate {
 
     public static final String KEY_ALGORITHM = "RSA";
 
-    public static final String SIGNATURE_ALGORITHM = "TEST";
+    public static final String SIGNATURE_ALGORITHM = "YYF";
 
     private static final String PUBLIC_KEY = "RSAPublicKey";
 
@@ -40,14 +40,9 @@ public class RSATest {
 
             keyMap = initKey();
 
-
             String publicKey = getPublicKey(keyMap);
-
             System.out.println(publicKey);
-
-
             String privateKey = getPrivateKey(keyMap);
-
             System.out.println(privateKey);
 
         } catch (Exception e) {
