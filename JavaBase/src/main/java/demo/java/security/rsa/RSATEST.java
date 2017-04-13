@@ -13,8 +13,8 @@ import java.security.NoSuchAlgorithmException;
 public class RSATEST {
 
 
-    static String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOFIYo0RnRJ15UIn/tnDy6ntlDFFNQYYm5yY/96Qp3+64v32dXmjUS+2c6Ar12haxH4tKBrp+k8p8Wl9awVfIDh0oNuVcvFMZYeWVHsIVyzb4lLp62CzaFEu1bpY53Bh0ZQYlrC6egr5y20McV5ZznNpb96OYYnpVgKNimKFQYhwIDAQAB";
-    static String privateKey = "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAKqSMMe0Y5PvhE+ZbAD9jhu2qmE/IkQ/DHL/fX5H1fXbbj20ed68yPenERhBICA3FoZTb9riQz5zvumUHlRNoe/qg3dktxaHbDCWAUlqffmAFVEVcoyQHsYzCt5A/Ajlw3X2v/y0qJB86LEREKEg/8TFE9TodRdZ800klylix8BfAgMBAAECgYAp6H0/s9x7bm/Ntt5IaAPQX1MBTae3qN4AKzHEIxY4r88oLf17clrWLiAPG4EvKRnJqxpiZxEqePnBHflNsT1F8+3H6ak2UdwQ4Brjktv3J0q2V3YbEKyty31Jf2rpNHrieADtXZAE9ifN5lQdomPhKDT1PfemMNBR0HZZPfel8QJBAOWyqI+r4H5IQ+1xNm8+aGBbFnwj3nnPG7J5dw77nviGYXwvdDFOCUoKoaOK3kFVygmIUpXeOzfwCxARl7exf9UCQQC+GktDjaTVDNwW3xBQgRGxM8OULk1Qyl1DkEZGH3AjCcaf98HeHOWJ2kaHyW0sBFrCUOI1Yp1LRwo7T9YXT41jAkA/L4JG41UB6AcnjfkXaOd1ehkZVRSiFWLdGaSyrmzwmKbAbp1b4seTYpFMV6sD9gF51dJB/7vyi0m/xdciZOVxAkBu0ulZonObeHm+I6BhLj1gLqsv8aZFGRQx1SQCsUUwR/yxOUCd+f6e1M8VTgoFBSzb50dYk/ra7bk7Rpmq0Ue9AkA2dkc8bGvTYXvn1VbTYQZnN5GxoLh25f0b+BOC4t+UqgU9L0ScLmKotwBlKJx5uJifWJNhO7TSVYNN9zIIsQdT";
+    static String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFEkKrOM6p4bysxVrMqA5eR0BnMg2a8t66JLOIXq3KXiKTTjC/BsbGid7jDAV7MYmmBvB2mxiq5TB9/Qwwql57Pn1kz+lpsr4tXHZh9P6iORFis5cbq9wNO1e3WtEItDet/UHS+2TZMyX9PBiryPHCbcXvZEQHv189FoGpHR09NwIDAQAB";
+    static String privateKey = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMUSQqs4zqnhvKzFWsyoDl5HQGcyDZry3roks4hercpeIpNOML8GxsaJ3uMMBXsxiaYG8HabGKrlMH39DDCqXns+fWTP6Wmyvi1cdmH0/qI5EWKzlxur3A07V7da0Qi0N639QdL7ZNkzJf08GKvI8cJtxe9kRAe/Xz0WgakdHT03AgMBAAECgYEAlaEnvZmEULh06Tlvl7SCNFMlMzVt3xhIxEzZg9FfYyfWWMIlgOVER7qm4P1frAoQ2V6rdWKNeDRMfVyExO6WjOcIzlT1N67QTfOoNffTS/37zOBvZdxHWmi1QuaFf/acTsXaQCD63irLO6v9OjgDkTU2GPCcrBdnNl7eQzkrjAECQQDxjsi7sDy6soW2A07uF8WgcwvP7JSuYgWO2rbA87GHbpqMHBbjtdsGSi8ArsNH8fRG09b05Cr2Qik95Fzupp5nAkEA0NqUWlZqMM1G08X/mbRM8yADHKW4e9g/ElBT7PWsJOcCzZ+Hw7911Q/1ydr6LLhO7hxVJireVCB2wfQ2KkWIsQJAXeGvlHqvb6Q4oX/xqkmk7nIoMhxxwMCqBlZs1tsfsVJEUJYOM1wXjv8/+1Tw4sJfvTNSBQW0yNb37m0VzU8GmwJAMwlm/VhmpLxVFYUp+9aKg1MMT6DTnzft2bzVdW9nfLETB0p3s8cCtWksCALB5dG4QAmeaTBKmkZAnw7deaD6UQJAFPo159yJZQ8LFHs/kS24OARgMGpoqpOoHJQ5twHgsiUxN6is3RgWLy05FVv3d/IcgUgCTgrDHcF83aaqpJbt1A==";
 
     @Test
     public void test() {
@@ -24,7 +24,16 @@ public class RSATEST {
 
     @Test
     public void testCheck() throws NoSuchAlgorithmException {
-        String str = "test";
+        String sign = RSASignature.sign(getMD5("test"), privateKey);
+        System.out.println("sign:" + sign);
+
+        boolean res = RSASignature.doCheck(getMD5("test"), sign, publicKey);
+        System.out.println(res);
+    }
+
+
+    public String getMD5(String str) throws NoSuchAlgorithmException {
+        str = "test";
         // 生成一个MD5加密计算摘要
         MessageDigest md = MessageDigest.getInstance("MD5");
         // 计算md5函数
@@ -32,12 +41,7 @@ public class RSATEST {
         // digest()最后确定返回md5 hash值，返回值为8为字符串。因为md5 hash值是16位的hex值，实际上就是8位的字符
         // BigInteger函数则将8位的字符串转换成16位hex值，用字符串来表示；得到字符串形式的hash值
         str = new BigInteger(1, md.digest()).toString(16);
-
-        String sign = RSASignature.sign(str, privateKey);
-        System.out.println("sign:" + sign);
-
-        boolean res = RSASignature.doCheck(str, sign, publicKey);
-        System.out.println(res);
+        return str;
     }
 
 
