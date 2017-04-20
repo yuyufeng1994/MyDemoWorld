@@ -10,12 +10,11 @@ import java.util.List;
 /**
  * Created by yuyufeng on 2017/4/20.
  */
-@Service
-public class UserService {
-    @Autowired
-    private UserDao userDao;
-
-    public List<User> queryAllUsers(){
-        return (List<User>) userDao.findAll();
-    }
+public interface UserService {
+    /**
+     * 查询所有用户
+     *
+     * @return
+     */
+    List<User> queryAllUsers();
 }
