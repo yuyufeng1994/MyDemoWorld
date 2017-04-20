@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by yuyufeng on 2017/4/20.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({ "classpath:applicationContext.xml" })
+@ContextConfiguration({ "classpath:spring/applicationContext.xml" })
 public class UserDaoTest {
     @Autowired
     private  UserDao userDao;

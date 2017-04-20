@@ -9,9 +9,11 @@
 <html>
 <head>
     <title>测试Page</title>
-    <%@ include file="/WEB-INF/jsp/include/head.jsp"%>
+    <%@ include file="/WEB-INF/jsp/include/head.jsp" %>
 </head>
 <body>
-<h1>测试Page</h1>
+<h1>测试Page </h1>
+<p>${appServer}</p>
+<p>${resourceServer}</p>
 </body>
 </html>
