@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * Created by yuyufeng on 2017/4/20.
- * request中获取url
+ * request中获取绝对url
  */
 public class URLBrokerLauncherInterceptor implements HandlerInterceptor {
 
