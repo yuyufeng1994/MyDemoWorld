@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCJPA" />
+    <file type="web" url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis" />
+    <file type="web" url="file://$PROJECT_DIR$/FrameIntegration/Struts2JPA" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

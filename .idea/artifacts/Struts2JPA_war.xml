@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Struts2JPA:war">
+    <output-path>$PROJECT_DIR$/FrameIntegration/Struts2JPA/target</output-path>
+    <root id="archive" name="Struts2JPA.war">
+      <element id="artifact" artifact-name="Struts2JPA:war exploded" />
+    </root>
+  </artifact>
+</component>

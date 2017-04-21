@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DesignPatterns" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FrameIntegration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCJPA" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FrameIntegration/Struts2JPA" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JavaBase" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SearchEngine" charset="UTF-8" />
   </component>
