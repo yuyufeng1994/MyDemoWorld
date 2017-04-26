@@ -1,0 +1,32 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>JspServlet</display-name>
+
+    <filter>
+        <filter-name>TestXMLFilter</filter-name>
+        <filter-class>filter.TestXMLFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>TestXMLFilter</filter-name>
+        <url-pattern>/filterXML/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>TestXMLServlet</servlet-name>
+        <servlet-class>servlet.TestXMLServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TestXMLServlet</servlet-name>
+        <url-pattern>/testXMLServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

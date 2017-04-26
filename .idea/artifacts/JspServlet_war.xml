@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JspServlet:war">
+    <output-path>$PROJECT_DIR$/FrameIntegration/JspServlet/target</output-path>
+    <root id="archive" name="JspServlet.war">
+      <element id="artifact" artifact-name="JspServlet:war exploded" />
+    </root>
+  </artifact>
+</component>

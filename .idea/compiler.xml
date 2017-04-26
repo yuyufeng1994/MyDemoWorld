@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DesignPatterns" />
         <module name="JavaBase" />
+        <module name="JspServlet" />
         <module name="SearchEngine" />
         <module name="SpringMVCJPA" />
         <module name="SpringMVCMyBatis" />
@@ -18,6 +19,7 @@
       <module name="DesignPatterns" target="1.8" />
       <module name="FrameIntegration" target="1.8" />
       <module name="JavaBase" target="1.8" />
+      <module name="JspServlet" target="1.8" />
       <module name="MyDemoWorld" target="1.8" />
       <module name="SearchEngine" target="1.8" />
       <module name="SpringMVCJPA" target="1.8" />
