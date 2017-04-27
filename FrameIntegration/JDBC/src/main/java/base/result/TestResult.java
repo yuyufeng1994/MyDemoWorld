@@ -1,9 +1,8 @@
-package result;
+package base.result;
 
-import connection.ConnectionUtil;
-import connection.DruidUtil;
+import base.connection.ConnectionUtil;
+import base.utils.ReleaseUtil;
 import org.junit.Test;
-import utils.ReleaseUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

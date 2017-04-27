@@ -1,7 +1,7 @@
-package connection;
+package base.connection;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import init.DBProperties;
+import base.init.DBProperties;
 import org.junit.Test;
 
 import java.sql.Connection;

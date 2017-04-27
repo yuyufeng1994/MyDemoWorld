@@ -1,6 +1,6 @@
-package driver;
+package base.driver;
 
-import init.DBProperties;
+import base.init.DBProperties;
 import org.junit.Test;
 
 import java.sql.Connection;

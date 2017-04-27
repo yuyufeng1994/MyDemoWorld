@@ -1,7 +1,7 @@
-package connection;
+package base.connection;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
-import init.DBProperties;
+import base.init.DBProperties;
 import org.junit.Test;
 
 import javax.sql.DataSource;

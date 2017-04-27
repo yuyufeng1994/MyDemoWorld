@@ -1,8 +1,8 @@
-package statement;
+package base.statement;
 
-import connection.ConnectionUtil;
+import base.utils.ReleaseUtil;
+import base.connection.ConnectionUtil;
 import org.junit.Test;
-import utils.ReleaseUtil;
 
 import java.sql.Connection;
 import java.sql.Date;

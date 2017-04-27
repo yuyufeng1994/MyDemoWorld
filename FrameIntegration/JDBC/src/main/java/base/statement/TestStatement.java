@@ -1,9 +1,9 @@
-package statement;
+package base.statement;
 
-import connection.ConnectionUtil;
-import connection.DBCPUtil;
+import base.connection.ConnectionUtil;
+import base.connection.DBCPUtil;
 import org.junit.Test;
-import utils.ReleaseUtil;
+import base.utils.ReleaseUtil;
 
 import java.sql.*;
 

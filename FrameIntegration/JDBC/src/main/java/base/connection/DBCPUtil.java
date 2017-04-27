@@ -1,12 +1,11 @@
-package connection;
+package base.connection;
 
-import init.DBProperties;
+import base.init.DBProperties;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.commons.dbcp.BasicDataSourceFactory;
 import org.junit.Test;
 
 import javax.sql.DataSource;
-import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.SQLException;

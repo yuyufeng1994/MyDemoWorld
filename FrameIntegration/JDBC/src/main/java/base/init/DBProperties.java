@@ -1,4 +1,4 @@
-package init;
+package base.init;
 
 import java.io.FileInputStream;
 import java.util.Properties;

@@ -1,11 +1,9 @@
-package connection;
+package base.connection;
 
-import init.DBProperties;
+import base.init.DBProperties;
 import org.junit.Test;
 
-import java.io.InputStream;
 import java.sql.*;
-import java.util.Properties;
 
 /**
  * Created by yuyufeng on 2017/4/26.
