@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * Created by yuyufeng on 2017/4/27.
  */
-public class TestResult {
+public class TestResultSetMetaData {
     /**
      * 数据库获取列名
      */
