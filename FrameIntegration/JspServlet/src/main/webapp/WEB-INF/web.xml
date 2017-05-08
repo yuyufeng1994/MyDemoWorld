@@ -5,6 +5,12 @@
 <web-app>
     <display-name>JspServlet</display-name>
 
+    <context-param>
+        <param-name>config.properties</param-name>
+        <param-value>/conf/config.properties</param-value>
+    </context-param>
+
+    <!--filter-->
     <filter>
         <filter-name>TestXMLFilter</filter-name>
         <filter-class>filter.TestXMLFilter</filter-class>
@@ -15,6 +21,13 @@
         <url-pattern>/filterXML/*</url-pattern>
     </filter-mapping>
 
+    <!--listener-->
+    <listener>
+        <listener-class>listener.InitListener</listener-class>
+    </listener>
+
+
+    <!--serlvet-->
     <servlet>
         <servlet-name>TestXMLServlet</servlet-name>
         <servlet-class>servlet.TestXMLServlet</servlet-class>
@@ -25,6 +38,7 @@
         <url-pattern>/testXMLServlet</url-pattern>
     </servlet-mapping>
 
+    <!--welcome-file-list-->
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

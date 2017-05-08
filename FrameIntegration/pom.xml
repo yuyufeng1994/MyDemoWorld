@@ -16,6 +16,7 @@
         <module>SpringMVCMyBatis</module>
         <module>Struts2JPA</module>
         <module>JspServlet</module>
+        <module>JDBC</module>
     </modules>
 
 

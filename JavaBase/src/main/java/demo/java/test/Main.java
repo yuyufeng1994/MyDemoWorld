@@ -18,31 +18,7 @@ public class Main {
 		System.out.println(publicKey.toString());
 		System.out.println(privateKey.toString());
 
+
 	}
 }
 
-class Aob {
-	private String name;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-}
-
-class Bob extends Aob{
-	private String age;
-
-	public String getAge() {
-		return age;
-	}
-
-	public void setAge(String age) {
-		this.age = age;
-	}
-	
-}
