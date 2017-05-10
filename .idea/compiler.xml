@@ -12,6 +12,7 @@
         <module name="jsoup" />
         <module name="JspServlet" />
         <module name="SearchEngine" />
+        <module name="Spring" />
         <module name="SpringMVCJPA" />
         <module name="SpringMVCMyBatis" />
         <module name="Struts2JPA" />
@@ -28,6 +29,7 @@
       <module name="JspServlet" target="1.8" />
       <module name="MyDemoWorld" target="1.8" />
       <module name="SearchEngine" target="1.8" />
+      <module name="Spring" target="1.8" />
       <module name="SpringMVCJPA" target="1.8" />
       <module name="SpringMVCMyBatis" target="1.8" />
       <module name="Struts2JPA" target="1.8" />

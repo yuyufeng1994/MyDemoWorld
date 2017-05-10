@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/JspServlet/JspServlet.iml" filepath="$PROJECT_DIR$/FrameIntegration/JspServlet/JspServlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyDemoWorld.iml" filepath="$PROJECT_DIR$/MyDemoWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchEngine/SearchEngine.iml" filepath="$PROJECT_DIR$/SearchEngine/SearchEngine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/Spring/Spring.iml" filepath="$PROJECT_DIR$/JavaLibUse/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/SpringMVCJPA/SpringMVCJPA.iml" filepath="$PROJECT_DIR$/FrameIntegration/SpringMVCJPA/SpringMVCJPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis/SpringMVCMyBatis.iml" filepath="$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis/SpringMVCMyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/Struts2JPA/Struts2JPA.iml" filepath="$PROJECT_DIR$/FrameIntegration/Struts2JPA/Struts2JPA.iml" />
