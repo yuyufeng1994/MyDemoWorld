@@ -13,4 +13,16 @@
         <entry key="resourceServer" value="${server.resource}"/>
     </util:map>
 
+    <!--messages-->
+    <beans>
+        <bean id="messageSource"
+              class="org.springframework.context.support.ResourceBundleMessageSource">
+            <property name="basenames">
+                <list>
+                    <value>messages.exceptions</value>
+                </list>
+            </property>
+        </bean>
+    </beans>
+
 </beans>

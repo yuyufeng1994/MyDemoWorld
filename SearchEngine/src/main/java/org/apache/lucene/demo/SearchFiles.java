@@ -37,13 +37,13 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
-/** Simple command-line based search demo. */
+/** Simple command-line based search cookbook. */
 public class SearchFiles {
 
 	private SearchFiles() {
 	}
 
-	/** Simple command-line based search demo. */
+	/** Simple command-line based search cookbook. */
 	public static void main(String[] args) throws Exception {
 		args = new String[4];
 		args[0] = "-index";
@@ -51,7 +51,7 @@ public class SearchFiles {
 		args[2] = "-query";
 		args[3] = "index";
 		
-		String usage = "Usage:\tjava org.apache.lucene.demo.SearchFiles [-index dir] [-field f] [-repeat n] [-queries file] [-query string] [-raw] [-paging hitsPerPage]\n\nSee http://lucene.apache.org/core/4_1_0/demo/ for details.";
+		String usage = "Usage:\tjava org.apache.lucene.cookbook.SearchFiles [-index dir] [-field f] [-repeat n] [-queries file] [-query string] [-raw] [-paging hitsPerPage]\n\nSee http://lucene.apache.org/core/4_1_0/cookbook/ for details.";
 		if (args.length > 0 && ("-h".equals(args[0]) || "-help".equals(args[0]))) {
 			System.out.println(usage);
 			System.exit(0);

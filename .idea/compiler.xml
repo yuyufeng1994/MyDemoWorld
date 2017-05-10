@@ -15,6 +15,7 @@
         <module name="SpringMVCJPA" />
         <module name="SpringMVCMyBatis" />
         <module name="Struts2JPA" />
+        <module name="WeiXin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +31,7 @@
       <module name="SpringMVCJPA" target="1.8" />
       <module name="SpringMVCMyBatis" target="1.8" />
       <module name="Struts2JPA" target="1.8" />
+      <module name="WeiXin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

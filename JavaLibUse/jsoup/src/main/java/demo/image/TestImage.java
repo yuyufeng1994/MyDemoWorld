@@ -21,7 +21,7 @@ public class TestImage {
             Document doc = Jsoup.connect("http://sports.qq.com/l/basket/basketpic/page_pic/gamepic_page/nbagamepics_" + i + ".htm").get();
             i++;
             //获取后缀为jpg的图片的元素集合
-            Elements elements = doc.select("img[src~=.jpg]");
+            Elements elements = doc.select("img[src$=.jpg]");
             //遍历元素
             for (Element e : elements) {
 //            System.out.println(e);

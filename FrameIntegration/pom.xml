@@ -17,6 +17,7 @@
         <module>Struts2JPA</module>
         <module>JspServlet</module>
         <module>JDBC</module>
+        <module>WeiXin</module>
     </modules>
 
 

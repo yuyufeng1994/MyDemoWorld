@@ -1,3 +1,3 @@
 # MyDemoWorld
 MyDemoWorld  
-yyf's demo.
+yyf's cookbook.

@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCJPA" />
     <file type="web" url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis" />
     <file type="web" url="file://$PROJECT_DIR$/FrameIntegration/Struts2JPA" />
+    <file type="web" url="file://$PROJECT_DIR$/FrameIntegration/WeiXin" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

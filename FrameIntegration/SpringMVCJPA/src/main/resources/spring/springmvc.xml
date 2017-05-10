@@ -70,4 +70,10 @@
 			<bean class="interceptor.TestInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
+
+
+
+
+
+
 </beans>

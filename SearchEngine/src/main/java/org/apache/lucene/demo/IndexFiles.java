@@ -54,7 +54,7 @@ public class IndexFiles {
 	/** Index all text files under a directory. */
 	public static void main(String[] args) {
 		
-		String usage = "java org.apache.lucene.demo.IndexFiles" + " [-index INDEX_PATH] [-docs DOCS_PATH] [-update]\n\n"
+		String usage = "java org.apache.lucene.cookbook.IndexFiles" + " [-index INDEX_PATH] [-docs DOCS_PATH] [-update]\n\n"
 				+ "This indexes the documents in DOCS_PATH, creating a Lucene index"
 				+ "in INDEX_PATH that can be searched with SearchFiles";
 		String indexPath = "C://test/lucene/index";
