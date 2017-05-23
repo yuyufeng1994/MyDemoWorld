@@ -9,6 +9,7 @@
         <module name="DesignPatterns" />
         <module name="HttpClient" />
         <module name="JavaBase" />
+        <module name="JavaLibUse" />
         <module name="JDBC" />
         <module name="jsoup" />
         <module name="JspServlet" />

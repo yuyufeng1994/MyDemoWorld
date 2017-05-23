@@ -16,7 +16,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/JavaLibUse/pom.xml" />
       </set>
     </option>
   </component>
