@@ -18,11 +18,11 @@ public class SolrQueryDemo {
         SolrQuery query = new SolrQuery();
         //query.setQuery("*:*");
         //query.set("q", "*:*");
-        //query.set("q", "name_s:test1?");//?通配单个字符
-        //query.set("q", "name_s:tes*");//*通配多个字符
-        //query.set("q", "name_s:test~0.5");// ~ 模糊查询 可以直接用test~   test~0.5表示相似0.5以上的
+        //query.set("q", "userName:test1?");//?通配单个字符
+        query.set("q", "userName:tes*");//*通配多个字符
+        //query.set("q", "userName:test~0.5");// ~ 模糊查询 可以直接用test~   test~0.5表示相似0.5以上的
         //如检索相隔10个单词的“apache”和”“akarta”，“jakarta apache”~10
-        query.set("q", "name_s:test15 or name_s:test16");
+//        query.set("q", "userName:test15 or userName:test5");
 
         /*布尔操作符AND、||
                                 布尔操作符OR、&&
@@ -40,11 +40,11 @@ public class SolrQueryDemo {
                             取反实例：fq=!fstate:1*/
 
         //“^”控制相关度检索，如检索jakarta apache，同时希望去让“jakarta”的相关度更加好，那么在其后加上”^”符号和增量值，即jakarta^4 apache
-        query.set("fl", "score_i,name_s");//fl 查询字段
-        query.set("sort", "score_i desc");//sort 排序方式,正序用asc
+        query.set("fl", "id,userScore,userName");//fl 查询字段
+        query.set("sort", "userScore desc");//sort 排序方式,正序用asc
         //wt 输出格式：json xml等
 
-        query.set("fq", "score_i:[15 TO *]");//分数>=15  fq 过滤条件：在q查询符合结果中同时是fq查询符合的
+        query.set("fq", "userScore:[0 TO *]");//分数>=15  fq 过滤条件：在q查询符合结果中同时是fq查询符合的
         query.setStart(0);//开始记录数
         query.setRows(10000);//总条数
         QueryResponse queryResponse = server.query(query);
