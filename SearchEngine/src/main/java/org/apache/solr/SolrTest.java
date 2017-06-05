@@ -17,7 +17,7 @@ import org.apache.solr.common.SolrInputDocument;
 public class SolrTest {
 
     public static void main(String[] args) throws Exception {
-        addIndex();
+//        addIndex();
         query();
     }
 

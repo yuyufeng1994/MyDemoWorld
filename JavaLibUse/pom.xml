@@ -16,6 +16,7 @@
         <module>Spring</module>
         <module>SpringMVC</module>
         <module>HttpClient</module>
+        <module>MyBatis</module>
     </modules>
 
 
