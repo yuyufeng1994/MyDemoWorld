@@ -18,6 +18,7 @@
         <module>DesignPatterns</module>                 <!--设计模式-->
         <module>FrameIntegration</module>
         <module>JavaLibUse</module>
+        <module>Algorithm</module>
     </modules>
 
     <!--<dependencies>

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Algorithm" />
         <module name="common" />
         <module name="DesignPatterns" />
         <module name="HttpClient" />
@@ -27,6 +28,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Algorithm" target="1.8" />
       <module name="common" target="1.8" />
       <module name="DesignPatterns" target="1.8" />
       <module name="FrameIntegration" target="1.8" />

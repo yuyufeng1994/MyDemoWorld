@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" filepath="$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/FrameIntegration.iml" filepath="$PROJECT_DIR$/FrameIntegration/FrameIntegration.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/HttpClient/HttpClient.iml" filepath="$PROJECT_DIR$/JavaLibUse/HttpClient/HttpClient.iml" />
