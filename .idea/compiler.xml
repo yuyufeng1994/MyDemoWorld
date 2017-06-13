@@ -11,9 +11,12 @@
         <module name="HttpClient" />
         <module name="JavaBase" />
         <module name="JDBC" />
+        <module name="Jedis" />
         <module name="jsoup" />
         <module name="JspServlet" />
         <module name="MyBatis" />
+        <module name="netty" />
+        <module name="poi" />
         <module name="SearchEngine" />
         <module name="Spring" />
         <module name="SpringMVC" />
@@ -31,10 +34,13 @@
       <module name="JavaBase" target="1.8" />
       <module name="JavaLibUse" target="1.8" />
       <module name="JDBC" target="1.8" />
+      <module name="Jedis" target="1.8" />
       <module name="jsoup" target="1.8" />
       <module name="JspServlet" target="1.8" />
       <module name="MyBatis" target="1.8" />
       <module name="MyDemoWorld" target="1.8" />
+      <module name="netty" target="1.8" />
+      <module name="poi" target="1.8" />
       <module name="SearchEngine" target="1.8" />
       <module name="Spring" target="1.8" />
       <module name="SpringMVC" target="1.8" />

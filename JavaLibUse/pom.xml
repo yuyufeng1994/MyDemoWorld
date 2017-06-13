@@ -18,6 +18,9 @@
         <module>HttpClient</module>
         <module>MyBatis</module>
         <module>common</module>
+        <module>Jedis</module>
+        <module>poi</module>
+        <module>netty</module>
     </modules>
 
 

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/FrameIntegration/JDBC/JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBase/JavaBase.iml" filepath="$PROJECT_DIR$/JavaBase/JavaBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/JavaLibUse.iml" filepath="$PROJECT_DIR$/JavaLibUse/JavaLibUse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/Jedis/Jedis.iml" filepath="$PROJECT_DIR$/JavaLibUse/Jedis/Jedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/JspServlet/JspServlet.iml" filepath="$PROJECT_DIR$/FrameIntegration/JspServlet/JspServlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/MyBatis/MyBatis.iml" filepath="$PROJECT_DIR$/JavaLibUse/MyBatis/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyDemoWorld.iml" filepath="$PROJECT_DIR$/MyDemoWorld.iml" />
@@ -20,6 +21,8 @@
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/WeiXin/WeiXin.iml" filepath="$PROJECT_DIR$/FrameIntegration/WeiXin/WeiXin.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/common/common.iml" filepath="$PROJECT_DIR$/JavaLibUse/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/jsoup/jsoup.iml" filepath="$PROJECT_DIR$/JavaLibUse/jsoup/jsoup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/netty/netty.iml" filepath="$PROJECT_DIR$/JavaLibUse/netty/netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/poi/poi.iml" filepath="$PROJECT_DIR$/JavaLibUse/poi/poi.iml" />
     </modules>
   </component>
 </project>
