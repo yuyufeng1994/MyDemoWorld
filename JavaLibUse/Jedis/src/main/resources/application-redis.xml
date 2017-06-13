@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<!--该配置文件用户测试是加载redis到Spring容器-->
+<beans>
+	<bean id="ResourceConfigurer4"
+		  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="order" value="4" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+
+	</bean>
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxIdle" value="10" />
+		<property name="maxActive" value="10" />
+		<property name="maxWait" value="1000" />
+		<property name="testOnBorrow" value="0" />
+	</bean>
+
+	<bean id="jedisPool" class="redis.clients.jedis.JedisPool"  >
+		<constructor-arg index="0" ref="jedisPoolConfig"/>
+		<constructor-arg index="1" value="118.178.234.5"/>
+		<constructor-arg index="2" value="6379" type="int"/>
+		<constructor-arg index="3" value="1000" type="int" />
+		<constructor-arg index="4" value="Bbkb_deve"/>
+	</bean>
+
+	<bean id="jedisUtil" class="com.bbkb.common.util.JedisUtil"  >
+		<property name="jedisPool" ref="jedisPool" />
+	</bean>
+
+
+	<bean id="jedisPoolConfig1" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxIdle" value="50" />
+		<property name="maxActive" value="50" />
+		<property name="maxWait" value="1000" />
+		<property name="testOnBorrow" value="0" />
+	</bean>
+
+	<bean id="jedisPool1" class="redis.clients.jedis.JedisPool"  >
+		<constructor-arg index="0" ref="jedisPoolConfig"/>
+		<constructor-arg index="1" value="118.178.234.5"/>
+		<constructor-arg index="2" value="6379" type="int"/>
+		<constructor-arg index="3" value="1000" type="int" />
+		<constructor-arg index="4" value="Bbkb_deve"/>
+	</bean>
+
+	<bean id="jedisUtil1" class="com.bbkb.busticket.utils.BBKBJedisUtil"  >
+		<property name="jedisPool" ref="jedisPool1" />
+	</bean>
+</beans>
