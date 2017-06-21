@@ -21,9 +21,13 @@
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/Struts2JPA/Struts2JPA.iml" filepath="$PROJECT_DIR$/FrameIntegration/Struts2JPA/Struts2JPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/WeiXin/WeiXin.iml" filepath="$PROJECT_DIR$/FrameIntegration/WeiXin/WeiXin.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/common/common.iml" filepath="$PROJECT_DIR$/JavaLibUse/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/dubbo/consumer/consumer.iml" filepath="$PROJECT_DIR$/JavaLibUse/dubbo/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/dubbo/dubbo.iml" filepath="$PROJECT_DIR$/JavaLibUse/dubbo/dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/jsoup/jsoup.iml" filepath="$PROJECT_DIR$/JavaLibUse/jsoup/jsoup.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/netty/netty.iml" filepath="$PROJECT_DIR$/JavaLibUse/netty/netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/poi/poi.iml" filepath="$PROJECT_DIR$/JavaLibUse/poi/poi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/dubbo/provider/provider.iml" filepath="$PROJECT_DIR$/JavaLibUse/dubbo/provider/provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/dubbo/service/service.iml" filepath="$PROJECT_DIR$/JavaLibUse/dubbo/service/service.iml" />
     </modules>
   </component>
 </project>

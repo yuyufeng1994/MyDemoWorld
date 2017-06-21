@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Algorithm" />
         <module name="common" />
+        <module name="consumer" />
         <module name="DesignPatterns" />
         <module name="HttpClient" />
         <module name="JavaBase" />
@@ -18,7 +19,9 @@
         <module name="MyBatis" />
         <module name="netty" />
         <module name="poi" />
+        <module name="provider" />
         <module name="SearchEngine" />
+        <module name="service" />
         <module name="Spring" />
         <module name="SpringMVC" />
         <module name="SpringMVCJPA" />
@@ -30,7 +33,9 @@
     <bytecodeTargetLevel>
       <module name="Algorithm" target="1.8" />
       <module name="common" target="1.8" />
+      <module name="consumer" target="1.8" />
       <module name="DesignPatterns" target="1.8" />
+      <module name="dubbo" target="1.8" />
       <module name="FrameIntegration" target="1.8" />
       <module name="HttpClient" target="1.8" />
       <module name="JavaBase" target="1.8" />
@@ -43,7 +48,9 @@
       <module name="MyDemoWorld" target="1.8" />
       <module name="netty" target="1.8" />
       <module name="poi" target="1.8" />
+      <module name="provider" target="1.8" />
       <module name="SearchEngine" target="1.8" />
+      <module name="service" target="1.8" />
       <module name="Spring" target="1.8" />
       <module name="SpringMVC" target="1.8" />
       <module name="SpringMVCJPA" target="1.8" />

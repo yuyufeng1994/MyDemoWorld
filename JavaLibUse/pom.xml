@@ -21,6 +21,7 @@
         <module>Jedis</module>
         <module>poi</module>
         <module>netty</module>
+        <module>dubbo</module>
     </modules>
 
 

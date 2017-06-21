@@ -1,5 +1,8 @@
 package datastrcture.tree.BST;
 
+import java.util.Hashtable;
+import java.util.Map;
+
 /**
  * Created by yuyufeng on 2017/6/13.
  */
@@ -17,6 +20,7 @@ public class Main {
         bst.insertBST(7);
         bst.insertBST(9);
         bst.inOrderTraverse(bst.getRoot());
+        Map<String,String> map = new Hashtable<>();
 
     }
 }
