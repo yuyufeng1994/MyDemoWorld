@@ -1,4 +1,4 @@
-package common.qrcode;
+package demo.common.qrcode;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.zxing.*;
