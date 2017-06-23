@@ -11,7 +11,15 @@ public class TestBean {
     @Field
     private String userName;
     @Field
-    private int userScore;
+    private String userContent;
+
+    public String getUserContent() {
+        return userContent;
+    }
+
+    public void setUserContent(String userContent) {
+        this.userContent = userContent;
+    }
 
     public String getId() {
         return id;
@@ -29,20 +37,12 @@ public class TestBean {
         this.userName = userName;
     }
 
-    public int getUserScore() {
-        return userScore;
-    }
-
-    public void setUserScore(int userScore) {
-        this.userScore = userScore;
-    }
-
     @Override
     public String toString() {
         return "TestBean{" +
                 "id='" + id + '\'' +
                 ", userName='" + userName + '\'' +
-                ", userScore=" + userScore +
+                ", content='" + userContent + '\'' +
                 '}';
     }
 }

@@ -4,22 +4,28 @@ package org.apache.solr;
  * Created by yuyufeng on 2017/5/24.
  */
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
 import org.apache.solr.client.solrj.SolrQuery;
+import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.client.solrj.response.QueryResponse;
+import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
+import org.apache.solr.common.util.NamedList;
 
 public class SolrTest {
 
     public static void main(String[] args) throws Exception {
 //        addIndex();
-        query();
+//        query();
+        queryHighlighter("互联网客运公司");
     }
+
 
 
     /**
@@ -33,8 +39,8 @@ public class SolrTest {
         HttpSolrClient server = SolrServer.getServer();
         SolrInputDocument doc = new SolrInputDocument();
         doc.addField("id", "1003");
-        doc.addField("userName", "testName测试");//_s String类型
-        doc.addField("userScore", "103");//_i 整型
+        doc.addField("userName", "测试");//_s String类型
+        doc.addField("userContent", "今天天气好吗");//_i 整型
         server.add(doc);
         server.commit();
         //添加多个
@@ -79,6 +85,47 @@ public class SolrTest {
         server.commit();
     }
 
+    public  static  void queryHighlighter(String kw){
+        SolrQuery solrQuery = new SolrQuery();
+        solrQuery.setQuery("userContent:"+kw); //设置查询关键字
+        solrQuery.setHighlight(true); //开启高亮
+        solrQuery.addHighlightField("userContent"); //高亮字段
+        solrQuery.setHighlightSimplePre("<font color='red'>"); //高亮单词的前缀
+        solrQuery.setHighlightSimplePost("</font>"); //高亮单词的后缀
+        solrQuery.setHighlightFragsize(1);
+        /**
+         hl.snippets
+         hl.snippets参数是返回高亮摘要的段数，因为我们的文本一般都比较长，含有搜索关键字的地方有多处，如果hl.snippets的值大于1的话，
+         会返回多个摘要信息，即文本中含有关键字的几段话，默认值为1，返回含关键字最多的一段描述。solr会对多个段进行排序。
+         hl.fragsize
+         hl.fragsize参数是摘要信息的长度。默认值是100，这个长度是出现关键字的位置向前移6个字符，再往后100个字符，取这一段文本。*/
+
+        solrQuery.setHighlightFragsize(100);
+
+        try {
+            QueryResponse query = SolrServer.getServer().query(solrQuery);
+            SolrDocumentList results = query.getResults();
+            NamedList<Object> response = query.getResponse();
+            NamedList highlighting = (NamedList) response.get("highlighting");
+            for (int i = 0; i <highlighting.size() ; i++) {
+                System.out.println(highlighting.getName(i)+"："+highlighting.getVal(i));
+            }
+
+
+
+            for (SolrDocument result : results) {
+                System.out.println(result.toString());
+            }
+
+        } catch (SolrServerException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
     /**
      * 查询索引
      *
@@ -92,6 +139,7 @@ public class SolrTest {
         query.setQuery("*:*");
         query.setStart(0);//开始记录数
         query.setRows(10000);//总条数
+
         QueryResponse queryResponse = server.query(query);
         SolrDocumentList results = queryResponse.getResults();
         System.out.println("总条数为：" + results.getNumFound());
@@ -99,7 +147,7 @@ public class SolrTest {
             System.out.print(results.get(i).getFieldNames());
             System.out.print(results.get(i).getFieldValue("id"));
             System.out.print(results.get(i).getFieldValue("userName"));
-            System.out.print(results.get(i).getFieldValue("userScore"));
+            System.out.print(results.get(i).getFieldValue("userContent"));
             System.out.println();
         }
 

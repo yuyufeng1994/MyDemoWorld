@@ -27,7 +27,6 @@ public class SolrBean {
             TestBean bean = new TestBean();
             bean.setId(i + "");
             bean.setUserName("test" + i);
-            bean.setUserScore(i);
             docs.add(bean);
         }
         server.addBeans(docs);

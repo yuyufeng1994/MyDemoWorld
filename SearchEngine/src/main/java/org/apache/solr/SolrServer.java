@@ -7,7 +7,7 @@ import org.apache.solr.client.solrj.impl.HttpSolrClient;
 
 public class SolrServer {
     private static HttpSolrClient server = null;
-    private static String url = "http://127.0.0.1:8983/solr/user_info";
+    private static String url = "http://127.0.0.1:8983/solr/core1";
 
     public static HttpSolrClient getServer() {
         if (server == null) {
