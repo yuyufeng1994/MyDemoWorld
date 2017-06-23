@@ -3,6 +3,7 @@ package org.apache.solr;
 /**
  * Created by yuyufeng on 2017/5/24.
  */
+
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 
 public class SolrServer {
