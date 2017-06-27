@@ -19,5 +19,6 @@ public class TestSubmitCallable {
         });
 
         System.out.println("future.get() = " + future.get());
+        executorService.shutdown();
     }
 }

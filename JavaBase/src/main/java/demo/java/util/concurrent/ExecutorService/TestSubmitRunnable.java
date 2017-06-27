@@ -1,9 +1,6 @@
 package demo.java.util.concurrent.ExecutorService;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 /**
  * Created by yuyufeng on 2017/5/4.
@@ -11,7 +8,7 @@ import java.util.concurrent.Future;
  * 以下是 ExecutorService submit() 示例：
  */
 public class TestSubmitRunnable {
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
+    public static void main(String[] args) throws ExecutionException, InterruptedException, TimeoutException {
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
 
@@ -27,8 +24,10 @@ public class TestSubmitRunnable {
             }
         });
 
-        future.get();  //returns null if the task has finished correctly.
+//        future.get();  //returns null if the task has finished correctly.
         System.out.println(future.get());
+
+
         executorService.shutdown();
 
 
