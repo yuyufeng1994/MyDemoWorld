@@ -24,6 +24,14 @@ public class UserTest {
     public void test(){
 
     }
+
+    @Test
+    public void testSelectOne(){
+        UserInfo user = userInfoMapper.selectOne(2l);
+        userInfoMapper.selectOne(2l);
+        userInfoMapper.selectOne(2l);
+        System.out.println("## "+user);
+    }
     @Test
     public void testSelectList(){
         List<UserInfo> list =  userInfoMapper.selectList();

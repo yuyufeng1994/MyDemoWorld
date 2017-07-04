@@ -14,5 +14,10 @@
 
         <!--开启驼峰命名转换-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+
+        <setting name="cacheEnabled" value="true"/>
+
     </settings>
 </configuration>
