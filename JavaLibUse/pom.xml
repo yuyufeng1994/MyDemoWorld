@@ -22,6 +22,7 @@
         <module>poi</module>
         <module>netty</module>
         <module>dubbo</module>
+        <module>mq</module>
     </modules>
 
 

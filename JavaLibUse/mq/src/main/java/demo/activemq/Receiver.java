@@ -42,7 +42,6 @@ public class Receiver {
                 }else{
                     System.out.println("没有收到消息");
                 }
-
                 System.out.println(new Date());
             }
         } catch (Exception e) {

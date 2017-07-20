@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/DesignPatterns" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/FrameIntegration" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/FrameIntegration/JspServlet" charset="UTF-8" />
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/FrameIntegration/SpringBoot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCJPA" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FrameIntegration/Struts2JPA" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/JavaBase" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JavaLibUse/Spring" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JavaLibUse/SpringMVC" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SearchEngine" charset="UTF-8" />
-    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

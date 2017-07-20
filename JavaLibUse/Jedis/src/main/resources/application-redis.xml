@@ -2,7 +2,7 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 <!--该配置文件用户测试是加载redis到Spring容器-->
 <beans>
-	<bean id="ResourceConfigurer4"
+	<!--<bean id="ResourceConfigurer4"
 		  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="order" value="4" />
 		<property name="ignoreUnresolvablePlaceholders" value="true" />
@@ -46,5 +46,5 @@
 
 	<bean id="jedisUtil1" class="com.bbkb.busticket.utils.BBKBJedisUtil"  >
 		<property name="jedisPool" ref="jedisPool1" />
-	</bean>
+	</bean>-->
 </beans>

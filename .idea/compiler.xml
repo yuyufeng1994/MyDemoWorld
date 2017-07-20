@@ -16,6 +16,7 @@
         <module name="Jedis" />
         <module name="jsoup" />
         <module name="JspServlet" />
+        <module name="mq" />
         <module name="MyBatis" />
         <module name="netty" />
         <module name="poi" />
@@ -23,14 +24,16 @@
         <module name="SearchEngine" />
         <module name="service" />
         <module name="Spring" />
+        <module name="SpringBoot" />
         <module name="SpringMVC" />
         <module name="SpringMVCJPA" />
         <module name="SpringMVCMyBatis" />
         <module name="Struts2JPA" />
+        <module name="VelocityWeb" />
         <module name="WeiXin" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="Algorithm" target="1.8" />
       <module name="common" target="1.8" />
       <module name="consumer" target="1.8" />
@@ -44,6 +47,7 @@
       <module name="Jedis" target="1.8" />
       <module name="jsoup" target="1.8" />
       <module name="JspServlet" target="1.8" />
+      <module name="mq" target="1.8" />
       <module name="MyBatis" target="1.8" />
       <module name="MyDemoWorld" target="1.8" />
       <module name="netty" target="1.8" />
@@ -52,10 +56,12 @@
       <module name="SearchEngine" target="1.8" />
       <module name="service" target="1.8" />
       <module name="Spring" target="1.8" />
+      <module name="SpringBoot" target="1.8" />
       <module name="SpringMVC" target="1.8" />
       <module name="SpringMVCJPA" target="1.8" />
       <module name="SpringMVCMyBatis" target="1.8" />
       <module name="Struts2JPA" target="1.8" />
+      <module name="VelocityWeb" target="1.8" />
       <module name="WeiXin" target="1.8" />
     </bytecodeTargetLevel>
   </component>

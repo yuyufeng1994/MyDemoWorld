@@ -15,15 +15,18 @@
       <module fileurl="file://$PROJECT_DIR$/MyDemoWorld.iml" filepath="$PROJECT_DIR$/MyDemoWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchEngine/SearchEngine.iml" filepath="$PROJECT_DIR$/SearchEngine/SearchEngine.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/Spring/Spring.iml" filepath="$PROJECT_DIR$/JavaLibUse/Spring/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FrameIntegration/SpringBoot/SpringBoot.iml" filepath="$PROJECT_DIR$/FrameIntegration/SpringBoot/SpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/SpringMVC/SpringMVC.iml" filepath="$PROJECT_DIR$/JavaLibUse/SpringMVC/SpringMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/SpringMVCJPA/SpringMVCJPA.iml" filepath="$PROJECT_DIR$/FrameIntegration/SpringMVCJPA/SpringMVCJPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis/SpringMVCMyBatis.iml" filepath="$PROJECT_DIR$/FrameIntegration/SpringMVCMyBatis/SpringMVCMyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/Struts2JPA/Struts2JPA.iml" filepath="$PROJECT_DIR$/FrameIntegration/Struts2JPA/Struts2JPA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FrameIntegration/VelocityWeb/VelocityWeb.iml" filepath="$PROJECT_DIR$/FrameIntegration/VelocityWeb/VelocityWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrameIntegration/WeiXin/WeiXin.iml" filepath="$PROJECT_DIR$/FrameIntegration/WeiXin/WeiXin.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/common/common.iml" filepath="$PROJECT_DIR$/JavaLibUse/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/dubbo/consumer/consumer.iml" filepath="$PROJECT_DIR$/JavaLibUse/dubbo/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/dubbo/dubbo.iml" filepath="$PROJECT_DIR$/JavaLibUse/dubbo/dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/jsoup/jsoup.iml" filepath="$PROJECT_DIR$/JavaLibUse/jsoup/jsoup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaLibUse/mq/mq.iml" filepath="$PROJECT_DIR$/JavaLibUse/mq/mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/netty/netty.iml" filepath="$PROJECT_DIR$/JavaLibUse/netty/netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/poi/poi.iml" filepath="$PROJECT_DIR$/JavaLibUse/poi/poi.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLibUse/dubbo/provider/provider.iml" filepath="$PROJECT_DIR$/JavaLibUse/dubbo/provider/provider.iml" />

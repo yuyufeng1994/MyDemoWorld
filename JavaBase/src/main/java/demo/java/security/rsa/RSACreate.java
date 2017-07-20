@@ -25,7 +25,7 @@ public class RSACreate {
 
     public static final String KEY_ALGORITHM = "RSA";
 
-    public static final String SIGNATURE_ALGORITHM = "YYF";
+    public static final String SIGNATURE_ALGORITHM = "CUST";
 
     private static final String PUBLIC_KEY = "RSAPublicKey";
 

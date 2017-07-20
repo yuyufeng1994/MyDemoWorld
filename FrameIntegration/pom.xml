@@ -18,6 +18,8 @@
         <module>JspServlet</module>
         <module>JDBC</module>
         <module>WeiXin</module>
+        <module>SpringBoot</module>
+        <module>VelocityWeb</module>
     </modules>
 
 
