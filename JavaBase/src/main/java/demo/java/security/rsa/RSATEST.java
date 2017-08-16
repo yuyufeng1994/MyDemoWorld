@@ -29,7 +29,7 @@ public class RSATEST {
         byte[] data = RSAEncrypt.encrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey), "这是RSA加密".getBytes());
 
         //公钥解密
-        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPublicKeyByStr(publicKey),data);
+        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPublicKeyByStr(publicKey), data);
         System.out.println(new String(results));
     }
 
@@ -37,12 +37,14 @@ public class RSATEST {
     public void testEncrypt2() throws Exception {
         //公钥加密
         byte[] data = RSAEncrypt.encrypt(RSAEncrypt.loadPublicKeyByStr(publicKey), "这是RSA加密".getBytes());
-
+        System.out.println(data);
+        String dataStr = new String(data, "ISO-8859-1");
+        System.out.println(dataStr);
+        byte[] dataDe = dataStr.getBytes("ISO-8859-1");
         //私钥解密
-        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey),data);
+        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey), dataDe);
         System.out.println(new String(results));
     }
-
 
 
     @Test
