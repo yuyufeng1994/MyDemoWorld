@@ -7,6 +7,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
+ * 公钥负责加密，私钥负责解密；
+ * 私钥负责签名，公钥负责验证。
  * Created by yuyufeng on 2017/4/12.
  */
 
@@ -21,16 +23,38 @@ public class RSATEST {
         System.out.println("RSATEST.test");
     }
 
+    @Test
+    public void testEncrypt1() throws Exception {
+        //私钥加密
+        byte[] data = RSAEncrypt.encrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey), "这是RSA加密".getBytes());
+
+        //公钥解密
+        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPublicKeyByStr(publicKey),data);
+        System.out.println(new String(results));
+    }
+
+    @Test
+    public void testEncrypt2() throws Exception {
+        //公钥加密
+        byte[] data = RSAEncrypt.encrypt(RSAEncrypt.loadPublicKeyByStr(publicKey), "这是RSA加密".getBytes());
+
+        //私钥解密
+        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey),data);
+        System.out.println(new String(results));
+    }
+
+
 
     @Test
     public void testCheck() throws NoSuchAlgorithmException {
         //发送信息
-        String sign = RSASignature.sign(getMD5("test"), privateKey);
+        String sign = RSASignature.sign("test", privateKey);
         System.out.println("sign:" + sign);
 
         //接收信息
-        boolean res = RSASignature.doCheck(getMD5("test"), sign, publicKey);
+        boolean res = RSASignature.doCheck("test", sign, publicKey);
         System.out.println(res);
+
     }
 
 

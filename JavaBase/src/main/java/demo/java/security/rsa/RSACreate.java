@@ -25,30 +25,23 @@ public class RSACreate {
 
     public static final String KEY_ALGORITHM = "RSA";
 
-    public static final String SIGNATURE_ALGORITHM = "CUST";
+    public static final String SIGNATURE_ALGORITHM = "TEST";
 
     private static final String PUBLIC_KEY = "RSAPublicKey";
 
     private static final String PRIVATE_KEY = "RSAPrivateKey";
 
-
     public static void main(String[] args) {
 
         Map<String, Object> keyMap;
-
         try {
-
             keyMap = initKey();
-
             String publicKey = getPublicKey(keyMap);
             System.out.println(publicKey);
             String privateKey = getPrivateKey(keyMap);
             System.out.println(privateKey);
-
         } catch (Exception e) {
-
             e.printStackTrace();
-
         }
 
     }
