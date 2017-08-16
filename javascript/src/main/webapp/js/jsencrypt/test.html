@@ -1,0 +1,10 @@
+<script src="jsencrypt.min.js"></script>
+<script>
+    var publicKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFEkKrOM6p4bysxVrMqA5eR0BnMg2a8t66JLOIXq3KXiKTTjC/BsbGid7jDAV7MYmmBvB2mxiq5TB9/Qwwql57Pn1kz+lpsr4tXHZh9P6iORFis5cbq9wNO1e3WtEItDet/UHS+2TZMyX9PBiryPHCbcXvZEQHv189FoGpHR09NwIDAQAB";
+    var encrypt = new JSEncrypt();
+    encrypt.setPublicKey(publicKey);
+    var data = encrypt.encrypt("123456789");
+    console.log(data)
+</script>
+<!--encodeURI(data).replace(/\+/g, '%2B'),  //+号的处理：因为数据在网络上传输时，非字母数字字符都将被替换成百分号（%）后跟两位十六进制数，而base64编码在传输到后端的时候，+会变成空格，因此先替换掉。后端再替换回来-->
+<!--byte[] res = rsaCryptoServiceProvider.Decrypt(Convert.FromBase64String(pwd.Replace("%2B","+")), false);-->

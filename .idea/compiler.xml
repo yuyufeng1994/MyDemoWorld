@@ -12,6 +12,7 @@
         <module name="DesignPatterns" />
         <module name="HttpClient" />
         <module name="JavaBase" />
+        <module name="javascript" />
         <module name="JDBC" />
         <module name="Jedis" />
         <module name="jsoup" />
@@ -43,6 +44,7 @@
       <module name="HttpClient" target="1.8" />
       <module name="JavaBase" target="1.8" />
       <module name="JavaLibUse" target="1.8" />
+      <module name="javascript" target="1.8" />
       <module name="JDBC" target="1.8" />
       <module name="Jedis" target="1.8" />
       <module name="jsoup" target="1.8" />

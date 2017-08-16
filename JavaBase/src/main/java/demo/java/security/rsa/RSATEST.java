@@ -19,8 +19,10 @@ public class RSATEST {
     static String privateKey = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMUSQqs4zqnhvKzFWsyoDl5HQGcyDZry3roks4hercpeIpNOML8GxsaJ3uMMBXsxiaYG8HabGKrlMH39DDCqXns+fWTP6Wmyvi1cdmH0/qI5EWKzlxur3A07V7da0Qi0N639QdL7ZNkzJf08GKvI8cJtxe9kRAe/Xz0WgakdHT03AgMBAAECgYEAlaEnvZmEULh06Tlvl7SCNFMlMzVt3xhIxEzZg9FfYyfWWMIlgOVER7qm4P1frAoQ2V6rdWKNeDRMfVyExO6WjOcIzlT1N67QTfOoNffTS/37zOBvZdxHWmi1QuaFf/acTsXaQCD63irLO6v9OjgDkTU2GPCcrBdnNl7eQzkrjAECQQDxjsi7sDy6soW2A07uF8WgcwvP7JSuYgWO2rbA87GHbpqMHBbjtdsGSi8ArsNH8fRG09b05Cr2Qik95Fzupp5nAkEA0NqUWlZqMM1G08X/mbRM8yADHKW4e9g/ElBT7PWsJOcCzZ+Hw7911Q/1ydr6LLhO7hxVJireVCB2wfQ2KkWIsQJAXeGvlHqvb6Q4oX/xqkmk7nIoMhxxwMCqBlZs1tsfsVJEUJYOM1wXjv8/+1Tw4sJfvTNSBQW0yNb37m0VzU8GmwJAMwlm/VhmpLxVFYUp+9aKg1MMT6DTnzft2bzVdW9nfLETB0p3s8cCtWksCALB5dG4QAmeaTBKmkZAnw7deaD6UQJAFPo159yJZQ8LFHs/kS24OARgMGpoqpOoHJQ5twHgsiUxN6is3RgWLy05FVv3d/IcgUgCTgrDHcF83aaqpJbt1A==";
 
     @Test
-    public void test() {
-        System.out.println("RSATEST.test");
+    public void test() throws Exception {
+        byte[] dataDe =  Base64.decode("oFdgIT/O8R8R6fICuQ9+6jWd4EYZuQrb0PRIW4DshGMX6rol3Gy9XKKvSrbbd9NsKf0IrivsGAa3VQZpo1mcn4TNAMLL8m5rHlzsUWve+SmPi0blO+PUSAXK9lyLOGrMSRqx2U5qnOzbcbMB26Ofj8rU1u1e/Rh8LAdm45vxvnI=");
+        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey), dataDe);
+        System.out.println(new String(results));
     }
 
     @Test
@@ -37,12 +39,10 @@ public class RSATEST {
     public void testEncrypt2() throws Exception {
         //公钥加密
         byte[] data = RSAEncrypt.encrypt(RSAEncrypt.loadPublicKeyByStr(publicKey), "这是RSA加密".getBytes());
-        System.out.println(data);
-        String dataStr = new String(data, "ISO-8859-1");
-        System.out.println(dataStr);
-        byte[] dataDe = dataStr.getBytes("ISO-8859-1");
+        String dataBase64 = Base64.encode(data);
+        System.out.println(dataBase64);
         //私钥解密
-        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey), dataDe);
+        byte[] results = RSAEncrypt.decrypt(RSAEncrypt.loadPrivateKeyByStr(privateKey), Base64.decode(dataBase64));
         System.out.println(new String(results));
     }
 

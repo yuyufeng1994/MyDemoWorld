@@ -19,6 +19,7 @@
         <module>FrameIntegration</module>
         <module>JavaLibUse</module>
         <module>Algorithm</module>
+        <module>javascript</module>
     </modules>
 
     <!--<dependencies>
