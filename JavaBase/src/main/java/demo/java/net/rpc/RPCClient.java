@@ -41,6 +41,7 @@ public class RPCClient<T> {
                             if (input != null) input.close();
                         }
                     }
+
                 });
     }
 }
