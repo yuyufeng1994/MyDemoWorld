@@ -21,7 +21,7 @@ public class DynamicProxy
         proxySubject.doSomething();
 
         //write proxySubject class binary data to file
-        createProxyClassFile();
+//        createProxyClassFile();
     }
 
     public static void createProxyClassFile()
