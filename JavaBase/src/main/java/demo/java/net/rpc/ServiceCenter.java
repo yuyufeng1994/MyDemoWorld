@@ -15,6 +15,7 @@ import java.util.concurrent.Executors;
  * Created by yuyufeng on 2017/8/17.
  */
 public class ServiceCenter implements Server {
+
     private static ExecutorService executor = Executors.newFixedThreadPool(5);//Runtime.getRuntime().availableProcessors()
 
     private static final HashMap<String, Class> serviceRegistry = new HashMap<String, Class>();
