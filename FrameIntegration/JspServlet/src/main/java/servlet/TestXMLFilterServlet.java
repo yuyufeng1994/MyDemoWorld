@@ -12,12 +12,14 @@ import java.io.IOException;
  */
 @WebServlet(name = "TestXMLFilterServlet",urlPatterns = "/filterXML/testXMLFilterServlet")
 public class TestXMLFilterServlet extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("TestXMLFilterServlet.doPost");
         request.setAttribute("message","TestXMLFilterServlet");
         request.getRequestDispatcher("/WEB-INF/jsp/test/testFilter.jsp").forward(request,response);
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("TestFilterServlet.doGet");
         this.doPost(request,response);

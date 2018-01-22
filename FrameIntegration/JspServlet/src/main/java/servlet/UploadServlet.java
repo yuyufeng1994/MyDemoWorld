@@ -23,6 +23,7 @@ import java.util.UUID;
  */
 @WebServlet(name = "UploadServlet", urlPatterns = "/upload")
 public class UploadServlet extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
 //            String uploadPath = getServletContext().getRealPath("/image");// 上传目录 //放在webinf文件夹下用户无法访问 保证安全
@@ -112,6 +113,7 @@ public class UploadServlet extends HttpServlet {
         response.sendRedirect("/upload");
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/jsp/test/upload.jsp").forward(request, response);
     }

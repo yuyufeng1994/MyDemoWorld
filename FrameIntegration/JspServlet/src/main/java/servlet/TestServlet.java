@@ -12,11 +12,13 @@ import java.io.IOException;
  */
 @WebServlet(name = "TestServlet",urlPatterns = "/testServlet")
 public class TestServlet extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("TestServlet.doPost");
         request.getRequestDispatcher("/WEB-INF/jsp/test/test.jsp").forward(request,response);
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("TestServlet.doGet");
         this.doPost(request,response);
